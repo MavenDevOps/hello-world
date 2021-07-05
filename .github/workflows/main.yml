@@ -43,9 +43,11 @@ jobs:
           # A role to assume under the account_id account.
           # assume_role: # optional, default is 
           # Name of your ECR repository
-          repo: ${{secrets.REPO}}
+          repo: "347904005096.dkr.ecr.us-east-1.amazonaws.com/cmuat"
+          # ${{secrets.REPO}}
           # The AWS region
-          region: ${{secrets.REGION}}
+          region: "us-east-1"
+          # ${{secrets.REGION}}
           # Set this to true to create the repository if it does not already exist
           # create_repo: # optional
           # Set this to true to set a policy on the repository

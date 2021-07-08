@@ -55,7 +55,7 @@ jobs:
           # Set this to repository policy statement json file. only used if the set_repo_policy is set to true
           # repo_policy_file: # optional, default is repo-policy.json
           # Comma-separated string of ECR image tags
-          tags: latest.${GITHUB_SHA::7}
+          tags: latest.$(echo ${{github.sha}} | cut -c1-7)
           # optional, default is latest
           # Name of Dockerfile to use
           # dockerfile: # optional, default is Dockerfile
